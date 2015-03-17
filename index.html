@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Javascript: Understanding the Weird Parts</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/prism/min/prism.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
+
+<body data-spy="scroll">
+    
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="container">            
+            <h1 class="logo pull-left">
+                <a href="https://www.udemy.com/learn-angularjs?couponCode=ANGULARJSROCKS19">
+                    <span class="logo-title">get the course!</span>
+                </a>
+            </h1><!--//logo-->              
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#video">Watch First 3.5 Hours</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#benefits">Benefits</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#curriculum">Curriculum</a></li>                        
+                        <li class="nav-item last"><a class="scrollto" href="#instructor">Instructor</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">Javascript: Understanding the <span class="highlight">Weird Parts</span></h2>
+            <p class="intro">A deep dive under the hood of Javascript. Don't learn by just imitating other's code. Learn by <em>deeply understanding.</em></p>
+            <div class="btns">
+                <!--<a class="btn btn-cta-secondary" href="http://themes.3rdwavemedia.com/" target="_blank">Get the Course Now For $19</a>-->
+                <a class="btn btn-cta-primary" href="https://www.udemy.com/understand-javascript?couponCode=LEARNWEBDEV19" target="_blank">Get The 11.5 Hour Course On Sale For <span style='font-size: 1.4em;'>$19</span></a>
+                <br />
+                <div style="padding-top: 5px;">normally $149</div>
+                <br /><br /><br /><br />
+            </div>
+        </div><!--//container-->
+        <div class="social-media">
+            <div class="social-media-inner container text-center">
+                <ul class="list-inline">
+                    <li class="twitter-follow"><a href="https://twitter.com/anthonypalicea" class="twitter-follow-button" data-show-count="false">Follow @anthonypalicea</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-follow-->
+                    <li class="twitter-tweet">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="3rdwave_themes" data-hashtags="bootstrap">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-tweet-->
+                    <li class="facebook-like">
+                         <div class="fb-like" data-href="http://themes.3rdwavemedia.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                    </li><!--//facebook-like-->
+                </ul>
+            </div>
+        </div>
+    </section><!--//promo-->
+    
+    <!-- ******VIDEO****** --> 
+    <section id="video" class="about section">
+        <div class="container">
+            <h2 class="title text-center">Watch The First 3.5 Hours</h2>
+            <div class="row">
+                <div class="item col-md-12 text-center hidden-xs hidden-sm">
+                    <div><iframe width="640" height="360" src="//www.youtube.com/embed/ejBkOjEG6F0" frameborder="0" allowfullscreen></iframe></div>
+                </div> 
+                <div class="item col-md-12 text-center visible-xs visible-sm">
+                    <div><iframe width="288" height="162" src="//www.youtube.com/embed/ejBkOjEG6F0" frameborder="0" allowfullscreen></iframe></div>
+                </div>                 
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******BENEFITS****** --> 
+    <section id="benefits" class="about section" style="padding-top: 20px;">
+        <div class="container">
+            <h2 class="title text-center">What's Different About This Course?</h2>
+            <p class="intro text-center">Most coding courses teach by imitation. The instructor writes some code, and you write the same code, and believe you've learned something...until you try to use your 'knowledge' in the real world. This course is about <em>understanding</em> Javascript concepts behind it, and how it works. <em>Then</em> writing code. That's the proper way to learn code. <strong>Don't imitate...understand.</strong></p>
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">A Labor of Love</h3>
+                        <p>There is a lack of coding courses online that explain how things really work. You deserve a proper coding education. That's what this course is designed to do.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">11.5 Hours of Content</h3>
+                        <p>Over 80 lectures and 11.5 hours of quality content. Learn at your leisure and at your own pace. <em>Execution contexts, first-class functions, the scope chain, prototypal inheritance, a deep dive into the source code of jQuery, build your own mini-framework/library</em> and more.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-crosshairs"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Designed for Everyone</h3>
+                        <p>The course is perfect for beginners with minimal Javascript knowledge (variables, loops, and functions). However, even those with experience in Javascript will benefit from this deep dive under the hood of Javascript engines.</p>
+                    </div><!--//content-->
+                </div><!--//item-->           
+                <div class="clearfix visible-md"></div>    
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Watch On Your Mobile Device</h3>
+                        <p>Learn on the go. Watch the course on your phone or tablet using the Udemy app.</p>
+                    </div><!--//content-->
+                </div><!--//item-->                
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Source Code Included</h3>
+                        <p>Lectures come with both 'starter' and 'finished' code, so you can easily setup to follow the lecture and compare your code to the finished code from the lecture.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-coffee"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Ask Questions, Get Answers</h3>
+                        <p>Ask questions in the course discussion boards. The instructor answers all questions personally, usually within 24 hours.</p>
+                    </div><!--//content-->
+                </div><!--//item-->               
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******TESTIMONIALS****** --> 
+    <section id="testimonials" class="features section">
+        <div class="container text-center">
+            <h2 class="title" style="margin-bottom: 5px; color: #fff;">Five star reviews</h2>
+            <div><br /></div>
+            <div class="text-center">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><br /><br />
+            </div>
+            <ul class="feature-list list-unstyled" style="font-weight: bold;">
+                <li><i class="fa fa-check"></i> "One of the best JavaScript Courses on the internet. This is an absolutely thorough review of the JavaScript language that will give anyone serious about becoming good with JavaScript a huge eye opener."</a></li>
+                <li><i class="fa fa-check"></i> "I enjoyed this course, very clear explanation of fundamental concepts. Thanks a lot for putting this together!"</li>
+                <li><i class="fa fa-check"></i> "Excellent in depth JS tutorial! I would rate my JS skill level as intermediate, this tutorial was a phenomenal investment! "</a></li>
+                <li><i class="fa fa-check"></i> "It's official, Anthony is incredible at teaching programming."</li>
+            </ul>
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******DOCS****** --> 
+    <section id="curriculum" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">Topics Covered In This Course</h2>            
+            <div class="block">
+                <h3 class="sub-title text-center">FIRST CLASS FUNCTIONS</h3>
+                <p>Learn <em>first-class functions</em> and <em>callbacks</em> by diving into the how they work inside the Javascript engine.</p>
+            </div><!--//block-->
+            
+            <div class="block">
+                <h3 class="sub-title text-center">PROTOTYPAL INHERITANCE</h3>
+                <p>Learn how objects work in Javascript, and how clean and expressive prototypal inheritance can be over classical inheritance.</p>
+            </div><!--//block-->
+            
+            <div class="block">
+                <h3 class="sub-title text-center">FRAMEWORKS AND LIBRARIES - AN OPEN SOURCE EDUCATION</h3>
+                <p>Learn what you need to know to be able to read and learn from famous source code. We'll dive into the source code of jQuery to see what we can learn, and apply it by building our own mini-framework/library.</p>
+            </div><!--//block-->   
+            <div class="block">
+                <h3 class="sub-title text-center">And More...</h3>
+                <p>Bonus lectures, information on ECMAScript 6, and much more. Also you'll get even more content as bonus lectures are added during 2015.</p>
+                <p class="text-center">
+                    <a class="btn btn-cta-primary" href="https://www.udemy.com/understand-javascript?couponCode=LEARNWEBDEV19" target="_blank">See The Full Curriculum</a>
+                </p>
+            </div><!--//block-->
+            
+            </div><!--//docs-inner-->         
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******LICENSE****** --> 
+    <section id="license" class="license section" style="padding-top: 10px;">
+        <div class="container">
+            <div class="license-inner">
+            <h2 class="title text-center">Get The Course Now, Get Access For Life!</h2>
+                <div class="info">
+                    <p>The course is hosted and delivered via the well-known and respected <strong>Udemy.com</strong>. Get the course now here: <a href="https://www.udemy.com/understand-javascript?couponCode=LEARNWEBDEV19">Get The Course For Life!</a></p>
+                    <p></p>
+                </div><!--//info-->
+                <div class="cta-container">
+                    <div class="speech-bubble">                    
+                        <p class="intro text-center">Thank you and enjoy the course!</p>
+                    </div><!--//speech-bubble-->
+                    <div class="btn-container  text-center">
+                        - Tony Alicea       
+                        
+                    </div><!--//btn-container-->
+                </div><!--//cta-container-->
+            </div><!--//license-inner-->
+        </div><!--//container-->
+    </section><!--//how-->
+    
+    <!-- ******ABOUT INSTRUCTOR****** --> 
+    <section id="instructor" class="contact section has-pattern">
+        <div class="container">
+            <div class="contact-inner">
+                <h2 class="title  text-center">About the Instructor</h2>
+                <p class="intro  text-center">Tony Alicea is a 15 year veteran of web application development and user experience design, and carries a computer science degree, Microsoft certifications, and 25 years of experience in public speaking and teaching, both in front of large groups and as a one-on-one private instructor.</p>
+                <div class="author-message">                      
+                    <div class="profile">
+                        <img class="img-responsive" src="assets/images/tonyavatar.jpeg" alt="Anthony P. Alicea" />
+                    </div><!--//profile-->
+                    <div class="speech-bubble">
+                        <h3 class="sub-title">Don't Imitate, Understand</h3>
+                        <p>Examples need to be built on top of context, and once you have context, you can not only copy the examples you find, but adjust and improve upon them.</p>
+                        <p>I firmly believes that everyone has the ability to develop software, if they are just taught properly.</p>
+                        <p>It is my pleasure and privilege to teach you. I hope you'll come away knowing something you didn't before, understanding at a level deeper than before, and feeling positive that you can accomplish what you've set out to accomplish.</p>
+                        <div class="source">
+                            <span class="name"><a href="https://medium.com/anthonypalicea" target="_blank">Anthony P. Alicea</a></span>
+                            <br />
+                            <span class="title">Software Architect, UX/UI Designer, Instructor</span>
+                        </div><!--//source-->
+                    </div><!--//speech-bubble-->                        
+                </div><!--//author-message-->
+                <div class="clearfix"></div>
+                <div class="info text-center">
+                    <h4 class="title">Get Connected With Tony</h4>
+                    <ul class="social-icons list-inline">
+                        <li><a href="https://twitter.com/anthonypalicea" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/tonyalicea"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://plus.google.com/+TonyAlicea"><i class="fa fa-google"></i></a></li>               
+                    </ul>
+                </div><!--//info-->
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->  
+      
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+     
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/js/main.js"></script>       
+</body>
+</html> 
+
